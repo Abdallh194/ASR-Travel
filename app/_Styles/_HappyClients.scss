@@ -1,0 +1,91 @@
+.HappyClients {
+  padding: 40px 0;
+  .header {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    color: #f78536;
+  }
+  .HappyClients-card,
+  .Center-Card {
+    margin: 10px auto;
+    margin-top: 30px;
+    position: relative;
+    .msg {
+      background-color: $orange-color;
+      padding: 24px;
+      color: white;
+      border-radius: 7px;
+    }
+    .qoues {
+      position: absolute;
+      background-color: white;
+      top: -37px;
+      left: 30px;
+      width: 60px;
+      height: 60px;
+      padding: 14px;
+      border-radius: 50%;
+      text-align: center;
+
+      color: $orange-color;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 27px;
+      left: 9%;
+      border-width: 23px;
+      border-style: solid;
+      border-color: $orange-color transparent transparent transparent;
+    }
+    .clientName {
+      margin-top: 20px;
+      font-size: 18px;
+      font-family: "Montserrat";
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .Center-Card {
+    &::before {
+      bottom: 72px;
+    }
+  }
+  @media (max-width: 1400px) {
+    .Center-Card {
+      &::before {
+        bottom: 97px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .Center-Card {
+      &::before {
+        bottom: 123px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .HappyClients-card {
+      &::before {
+        bottom: 54px;
+        left: 13%;
+      }
+    }
+    .Center-Card {
+      &::before {
+        bottom: 196px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .HappyClients-card {
+      &::before {
+        bottom: 28px;
+        left: 10%;
+      }
+    }
+  }
+}

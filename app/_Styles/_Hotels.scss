@@ -1,0 +1,178 @@
+.Hotels {
+  .Hotel-Header {
+    position: relative;
+    width: 100%;
+    height: 830px;
+    background: url("/hotels.jpg");
+    background-size: cover;
+    background-position-y: 100%;
+    .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.533);
+    }
+    .info {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      color: white;
+      .head {
+        font-size: 180px;
+        font-family: $logo-font;
+        span {
+          color: $orange-color;
+        }
+      }
+
+      .desc {
+        font-family: "Montserrat";
+        font-size: 35px;
+        margin-top: -46px;
+      }
+    }
+  }
+  .Hotel-Number {
+    background-color: $orange-color;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    width: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: -85px;
+    text-align: center;
+    display: flex;
+    .Number-Type,
+    .Number {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .Number {
+      color: black;
+      font-size: 38px;
+    }
+  }
+  .About {
+    margin-top: 200px;
+    margin-bottom: 40px;
+    .Text-Card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .Card-header {
+        font-family: $logo-font;
+        font-size: 108px;
+        line-height: 1;
+        margin-top: -11px;
+        span {
+          color: $orange-color;
+        }
+      }
+      .Card-Desc {
+        color: rgb(163, 163, 163);
+        font-size: 17px;
+        margin-top: 22px;
+      }
+      .More {
+        cursor: pointer;
+        width: 150px;
+        text-align: center;
+        margin: 25px 0;
+        padding: 10px 0;
+        font-size: 21px;
+        background-color: $orange-color;
+        color: white;
+        border-radius: 5px;
+      }
+    }
+    .Info-Card {
+      width: 45%;
+      padding: 55px 30px;
+      margin: 18px auto;
+
+      color: white;
+      .Card-icon {
+        display: block;
+        background-color: white;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        padding: 15px;
+        color: black;
+      }
+      .InfoHead {
+        font-size: 23px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      .desc {
+        color: #d3d3d3;
+        margin-top: 8px;
+      }
+    }
+    .Right-Card {
+      margin-top: -40px;
+      height: fit-content;
+    }
+  }
+  @media (max-width: 1200px) {
+    .About {
+      .Text-Card {
+        .Card-header {
+          font-size: 99px;
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .About {
+      .Text-Card {
+        .Card-header {
+          font-size: 76px;
+        }
+      }
+      .Info-Card {
+        padding: 55px 10px;
+        .InfoHead {
+          font-size: 18px;
+        }
+      }
+    }
+    .Hotel-Number {
+      display: none;
+    }
+    .Hotel-Header {
+      .info {
+        .head {
+          font-size: 160px;
+          line-height: 1;
+        }
+        .desc {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .About {
+      margin-top: 80px;
+
+      .Info-Card {
+        width: 84%;
+        margin: 0 auto;
+        margin-bottom: 29px;
+        padding: 55px 30px;
+        .InfoHead {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

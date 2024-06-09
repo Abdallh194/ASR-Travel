@@ -1,0 +1,58 @@
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+
+// fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap"); //main font
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"); //logo font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); //header font
+//vars
+$main-font: "cairo";
+$logo-font: "Amatic SC", sans-serif;
+$orange-color: #f78536;
+$header-font: "Montserrat";
+
+//global css code
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+body {
+  font-family: $main-font !important;
+}
+small,
+.small {
+  font-size: 0.5em !important;
+}
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 139% !important;
+  margin-top: -8px;
+  line-height: 1;
+}
+hr {
+  margin: 1.4rem 0 !important;
+}
+@media (max-width: 1200px) {
+  .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 100% !important;
+  }
+}
+// components css filess
+
+@import "_Styles/HomePage";
+@import "_Styles/Navbar";
+@import "_Styles/footer";
+@import "_Styles/CustomerService";
+@import "_Styles/Camp";
+@import "_Styles/Destinatio";
+@import "_Styles/HappyClients";
+@import "_Styles/Flights";
+@import "_Styles/Login";
+@import "_Styles/Plans";
+@import "_Styles/UserProfile";
+@import "_Styles/Book";
+@import "_Styles/Result";
+@import "_Styles/cardcontent";
+@import "_Styles/route";
+@import "_Styles/Ticket";
+@import "_Styles/Hotels";

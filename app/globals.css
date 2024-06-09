@@ -1,0 +1,1833 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+body {
+  font-family: "cairo" !important;
+}
+
+small,
+.small {
+  font-size: 0.5em !important;
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 139% !important;
+  margin-top: -8px;
+  line-height: 1;
+}
+
+hr {
+  margin: 1.4rem 0 !important;
+}
+
+@media (max-width: 1200px) {
+  .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 100% !important;
+  }
+}
+.HomePage {
+  background: url("/hoem-bg.jpg");
+  height: 810px;
+  background-size: cover;
+  background-position-y: 57%;
+  position: relative;
+}
+.HomePage .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.HomePage .Form-Section {
+  background-color: white;
+  padding: 20px 40px 40px 40px;
+  border-top: 12px solid #f78536;
+}
+.HomePage .Form-Section .form-control {
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.0509803922);
+  border-radius: 0px;
+}
+.HomePage .Form-Section #submit {
+  background-color: #f78536;
+  color: white;
+  font-size: 19px;
+}
+.HomePage .Form-Section .header {
+  color: #f78536;
+  font-family: "Montserrat";
+  font-size: 29px;
+  padding-bottom: 20px;
+}
+.HomePage .HomePage-card {
+  margin-top: 100px;
+}
+.HomePage .Text-Section {
+  color: white;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.HomePage .Text-Section .main-header {
+  font-family: "Montserrat";
+  font-size: 59px;
+  font-weight: 800;
+  font-size: 50px;
+}
+.HomePage .Text-Section .sub-header {
+  font-size: 34px;
+}
+.HomePage .Text-Section .desc {
+  color: rgba(255, 255, 255, 0.7215686275);
+  font-family: "Montserrat";
+  font-size: 17px;
+  margin-top: 19px;
+}
+.HomePage .Text-Section .download {
+  background-color: white;
+  padding: 10px;
+  width: 180px;
+  color: black;
+  border-radius: 40px;
+  font-size: 19px;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.HomePage .Text-Section .stars {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+@media (max-width: 767px) {
+  .HomePage {
+    height: 1741px;
+    background-position-x: 52%;
+  }
+  .HomePage .reverse-Flex-InMbileView {
+    flex-direction: column-reverse;
+  }
+  .HomePage .HomePage-card {
+    margin-top: 110px;
+  }
+  .HomePage .Text-Section {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .HomePage {
+    background-size: inherit;
+    background-position-y: -11%;
+  }
+}
+
+.navbar {
+  box-shadow: 1px 1px 11px #d5d5d5;
+}
+.navbar .container {
+  max-width: 1400px;
+}
+.navbar .navbar-nav {
+  align-items: center;
+}
+.navbar .navbar-nav a {
+  color: black;
+  margin-right: 39px;
+  font-size: 19px;
+}
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar .logo {
+  font-size: 43px;
+  letter-spacing: 2px;
+  font-family: "Amatic SC", sans-serif;
+  color: #f78536;
+}
+.navbar .logo span {
+  background-color: #f78536;
+  display: inline-block;
+  width: 60px;
+  height: 63px;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+}
+.navbar .dis-MobileView {
+  display: none;
+}
+.navbar .login {
+  color: white !important;
+  width: 86px;
+  padding: 5px 0;
+  border-radius: 7px;
+  text-align: center;
+  background-color: #f78536;
+}
+@media (max-width: 1200px) {
+  .navbar .navbar-nav a {
+    color: black;
+    margin-right: 28px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar .dis-none-inMobile {
+    display: none;
+  }
+  .navbar .dis-MobileView {
+    display: block;
+  }
+}
+@media (max-width: 575px) {
+  .navbar .logo {
+    font-size: 37px;
+  }
+  .navbar .logo span {
+    width: 49px;
+    height: 58px;
+  }
+}
+
+footer {
+  background-color: #f78536;
+  padding: 40px;
+}
+footer .footer-card {
+  margin: 20px 0;
+}
+footer .footer-card .header {
+  font-weight: 600;
+  font-size: 21px;
+  font-family: "Montserrat";
+  color: white;
+}
+footer .footer-card .desc {
+  width: 80%;
+  margin-top: 7px;
+  color: rgba(0, 0, 0, 0.629);
+}
+footer .footer-card .desc div {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 1px;
+  transition: 0.3s;
+}
+footer .footer-card .desc div:hover {
+  letter-spacing: 1px;
+}
+footer .footer-card .form-control {
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  height: 53px;
+  border: none;
+}
+footer .footer-card .submit {
+  background-color: white;
+  border-left: 1px solid #ababab;
+  border-radius: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: black;
+  height: 53px;
+}
+footer .footer-card .down-Section {
+  background-color: black;
+  color: white;
+  margin-left: 31px;
+  border-radius: 4px;
+  padding: 2px 15px;
+  cursor: pointer;
+}
+footer .footer-card .down-Section span {
+  font-size: 11px;
+}
+footer .footer-card .down-Section .icon {
+  display: inline-block;
+  margin-top: -13px;
+}
+footer .footer-card .down-Section .head {
+  font-weight: bold;
+  font-size: 19px;
+  letter-spacing: 1.3px;
+  margin-top: -6px;
+}
+footer .footer-card .dis-Block-MobileVIEW {
+  display: flex;
+}
+footer .footer-card .socials {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 65px;
+  align-items: center;
+}
+footer .footer-card .social {
+  color: white;
+}
+footer .footer-card .social .social-icon {
+  display: inline-block;
+  padding: 4px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+footer .copyRight {
+  display: flex;
+  justify-content: space-between;
+}
+footer .Policy {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+}
+@media (max-width: 1200px) {
+  footer .footer-card .down-Section {
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 2px 6px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  footer .footer-card .socials {
+    width: 206px;
+  }
+}
+@media (max-width: 992px) {
+  footer .footer-card .desc {
+    width: 100%;
+  }
+  footer .footer-card .socials {
+    margin-left: 0;
+  }
+  footer .footer-card .down-Section {
+    margin-left: 1px;
+    padding: 1px 1px;
+  }
+  footer .footer-card .down-Section .head {
+    font-weight: bold;
+    font-size: unset;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 20px 15px;
+  }
+  footer .footer-card {
+    margin: 14px 0;
+    width: 50%;
+  }
+  footer .footer-card .down-Section {
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    width: 48%;
+  }
+  footer .footer-card .socials {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  footer .width-100-mobileView {
+    display: block !important;
+    width: 100%;
+  }
+  footer .d-flex-mobileView {
+    display: flex !important;
+  }
+  footer .copyRight {
+    display: block;
+    text-align: center;
+  }
+}
+
+.Customer-Service {
+  text-align: center;
+  margin: 50px 0;
+}
+.Customer-Service .header {
+  color: #f78536;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 400px;
+}
+.Customer-Service .desc {
+  width: 68%;
+  font-size: 23px;
+  color: rgba(0, 0, 0, 0.4901960784);
+  margin: 13px auto;
+}
+.Customer-Service .line {
+  width: 100px;
+  height: 2px;
+  background-color: #f78536;
+  margin: 10px auto;
+}
+.Customer-Service .Contact-Card {
+  text-align: left;
+  margin-top: 60px;
+}
+.Customer-Service .Contact-Card .card-header {
+  font-size: 28px;
+  font-family: "Montserrat";
+  padding: 15px 0;
+}
+.Customer-Service .Contact-Card .card-desc {
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+}
+.Customer-Service .Contact-Card .card-details {
+  margin-top: 10px;
+}
+.Customer-Service .Contact-Card .details {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 5px 0;
+  font-family: "Montserrat";
+  font-size: 17px;
+}
+.Customer-Service .Contact-Card .text-feild {
+  display: flex;
+}
+.Customer-Service .Contact-Card .text-feild .form-control {
+  height: 50px;
+  width: 48%;
+  margin: 10px auto;
+}
+.Customer-Service .Contact-Card #msg {
+  resize: none;
+  height: 150px;
+  width: 98%;
+  margin: 10px auto;
+}
+.Customer-Service .Contact-Card #submit {
+  width: 98%;
+  margin: 10px auto;
+  height: 45px;
+  border: none;
+  background-color: #f78536;
+  color: white;
+}
+@media (max-width: 767px) {
+  .Customer-Service .header {
+    font-size: 34px;
+  }
+  .Customer-Service .desc {
+    width: 90%;
+    font-size: 19px;
+  }
+}
+
+.Camp {
+  padding: 40px;
+  margin-top: 50px;
+}
+.Camp .Camp-Card .header {
+  font-size: 88px;
+  line-height: 1.1;
+  font-weight: 500;
+  font-family: "Montserrat";
+  margin-left: 39px;
+  position: relative;
+}
+.Camp .Camp-Card .header::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  width: 30px;
+  height: 100%;
+  background-color: #f78536;
+}
+.Camp .Camp-Card .desc {
+  padding: 10px 0;
+}
+.Camp .Camp-Card .socials-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.Camp .Camp-Card .icon {
+  color: white;
+  background-color: black;
+  padding: 4px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.Camp .Camp-Card .details {
+  display: flex;
+  justify-content: space-between;
+}
+.Camp .Camp-Card .details .btn-readMore {
+  background-color: #f78536;
+  color: white;
+  width: 170px;
+  padding: 8px;
+  text-align: center;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid #f78536;
+}
+.Camp .Camp-Card .details .btn-readMore:hover {
+  background-color: transparent;
+  color: #f78536;
+}
+.Camp .Camp-Card .image {
+  overflow: hidden;
+  width: 60%;
+  height: 111px;
+}
+.Camp .Camp-Card .image .img-fluid {
+  display: block;
+  margin-top: -66px;
+}
+.Camp .Camp-Card-image .img-fluid {
+  height: 587px;
+}
+@media (max-width: 1400px) {
+  .Camp .Camp-Card .header {
+    font-size: 80px;
+  }
+}
+@media (max-width: 1200px) {
+  .Camp .Camp-Card .header {
+    font-size: 63px;
+  }
+  .Camp .Camp-Card-image .img-fluid {
+    height: 500px;
+  }
+}
+@media (max-width: 992px) {
+  .Camp .Camp-Card .header {
+    font-size: 42px;
+  }
+  .Camp .Camp-Card-image .img-fluid {
+    height: 460px;
+  }
+}
+@media (max-width: 767px) {
+  .Camp {
+    padding: 0;
+  }
+  .Camp .Camp-Card {
+    margin-top: 34px;
+  }
+  .Camp .Camp-Card .header {
+    font-size: 53px;
+    font-weight: 400;
+  }
+  .Camp .Camp-Card .details {
+    margin: 25px 0;
+  }
+  .Camp .Camp-Card .image .img-fluid {
+    margin-top: -39px;
+  }
+  .Camp .Camp-Card-image .img-fluid {
+    height: auto;
+  }
+}
+
+.Destinatio {
+  padding: 40px 0;
+  margin-top: 40px;
+}
+.Destinatio .Destinatio-Card {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 290px;
+}
+.Destinatio .Destinatio-Card:hover .over-lay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.Destinatio .Destinatio-Card:hover .title {
+  filter: drop-shadow(0px 0px 6px white);
+}
+.Destinatio .Destinatio-Card:hover .border-box {
+  opacity: 1;
+}
+.Destinatio .Destinatio-Card .over-lay {
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+.Destinatio .Destinatio-Card .border-box {
+  position: absolute;
+  width: 90%;
+  height: 83%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 9px white;
+  opacity: 0;
+}
+.Destinatio .Destinatio-Card .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 35px;
+}
+.Destinatio .Destinatio-Card .img-fluid {
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+.Destinatio .Center-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #f78536;
+}
+.Destinatio .Center-Card .header {
+  font-size: 32px;
+  font-weight: 600;
+}
+.Destinatio .Center-Card .view {
+  margin-top: 5px;
+  padding: 1px 19px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .Destinatio .Destinatio-Card {
+    height: 190px;
+  }
+}
+
+.HappyClients {
+  padding: 40px 0;
+}
+.HappyClients .header {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  color: #f78536;
+}
+.HappyClients .HappyClients-card,
+.HappyClients .Center-Card {
+  margin: 10px auto;
+  margin-top: 30px;
+  position: relative;
+}
+.HappyClients .HappyClients-card .msg,
+.HappyClients .Center-Card .msg {
+  background-color: #f78536;
+  padding: 24px;
+  color: white;
+  border-radius: 7px;
+}
+.HappyClients .HappyClients-card .qoues,
+.HappyClients .Center-Card .qoues {
+  position: absolute;
+  background-color: white;
+  top: -37px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  padding: 14px;
+  border-radius: 50%;
+  text-align: center;
+  color: #f78536;
+}
+.HappyClients .HappyClients-card::before,
+.HappyClients .Center-Card::before {
+  position: absolute;
+  content: "";
+  bottom: 27px;
+  left: 9%;
+  border-width: 23px;
+  border-style: solid;
+  border-color: #f78536 transparent transparent transparent;
+}
+.HappyClients .HappyClients-card .clientName,
+.HappyClients .Center-Card .clientName {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+.HappyClients .HappyClients-card .clientName span,
+.HappyClients .Center-Card .clientName span {
+  font-weight: 600;
+}
+.HappyClients .Center-Card::before {
+  bottom: 72px;
+}
+@media (max-width: 1400px) {
+  .HappyClients .Center-Card::before {
+    bottom: 97px;
+  }
+}
+@media (max-width: 1200px) {
+  .HappyClients .Center-Card::before {
+    bottom: 123px;
+  }
+}
+@media (max-width: 992px) {
+  .HappyClients .HappyClients-card::before {
+    bottom: 54px;
+    left: 13%;
+  }
+  .HappyClients .Center-Card::before {
+    bottom: 196px;
+  }
+}
+@media (max-width: 767px) {
+  .HappyClients .HappyClients-card::before {
+    bottom: 28px;
+    left: 10%;
+  }
+}
+
+.Flights .flights-card {
+  position: relative;
+}
+.Flights .flights-card .locations {
+  background-color: #f78536;
+  position: absolute;
+  top: 137px;
+  left: -40px;
+  padding: 20px;
+  border-radius: 6px;
+  width: 250px;
+  color: white;
+}
+.Flights .flights-card .locations .name {
+  font-weight: bold;
+  font-size: 21px;
+  margin-top: -5px;
+}
+.Flights .flights-card .locations .btm-loc {
+  margin-top: 10px;
+}
+.Flights .flights-card .content {
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 20px;
+  position: relative;
+}
+.Flights .flights-card .content::before {
+  position: absolute;
+  content: "";
+  left: -55px;
+  width: 32px;
+  height: 100%;
+  background-color: #f78536;
+}
+.Flights .flights-card .header {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 77px;
+  margin-top: 111px;
+  line-height: 1.3;
+}
+.Flights .flights-card .desc {
+  margin-top: 20px;
+}
+.Flights .flights-card .howWork {
+  background-color: black;
+  width: 180px;
+  color: white;
+  text-align: center;
+  padding: 13px 0px;
+  cursor: pointer;
+  font-size: 19px;
+  margin-top: 22px;
+  display: block;
+}
+.Flights .image-card {
+  display: flex;
+}
+@media (max-width: 1600px) {
+  .Flights .flights-card .content {
+    width: 90%;
+  }
+  .Flights .flights-card .header {
+    font-size: 64px;
+  }
+}
+@media (max-width: 1400px) {
+  .Flights .flights-card .header {
+    font-size: 48px;
+  }
+}
+@media (max-width: 1200px) {
+  .Flights .flights-card .header {
+    font-size: 39px;
+  }
+}
+@media (max-width: 992px) {
+  .Flights .flights-card .header {
+    font-size: 32px;
+  }
+  .Flights .flights-card .locations {
+    top: 348px;
+    left: 56px;
+  }
+}
+@media (max-width: 767px) {
+  .Flights .flights-card .header {
+    margin-top: 60px;
+  }
+  .Flights .flights-card .locations {
+    top: 211px;
+  }
+  .Flights .image-card {
+    margin-bottom: 90px;
+  }
+}
+
+.Login .logform {
+  width: 600px;
+}
+
+.Login .logform,
+.signupForm {
+  border: 1px solid #f78536;
+  width: 800px;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 30px auto;
+  margin-top: 90px;
+}
+
+.signupForm .birthDate {
+  border: none !important;
+  display: block !important;
+  margin-top: -8px !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .Login .logform,
+  .signupForm {
+    width: 96%;
+    padding: 30px 15px;
+  }
+}
+.Plans {
+  text-align: center;
+  padding: 40px 0;
+  padding-bottom: 0;
+}
+.Plans .PlanInfo {
+  background-color: #f5f5f5;
+  padding: 75px 0;
+}
+.Plans .Plan-Card {
+  display: flex;
+  margin-top: 45px;
+  text-align: left;
+}
+.Plans .Plan-Card .icon {
+  font-size: 46px;
+  margin-right: 24px;
+  color: #a0a0a0;
+}
+.Plans .Plan-Card .header {
+  font-weight: 600;
+  font-size: 21px;
+  font-family: "Montserrat";
+  margin-bottom: 5px;
+}
+.Plans .Plan-Card .desc {
+  color: #a0a0a0;
+}
+.Plans .Plan-Card .more {
+  color: #f78536;
+  margin-top: 10px;
+}
+.Plans .chooseCard {
+  border: 2px solid #eceef0;
+  border-radius: 5px;
+  margin: 70px auto;
+  width: calc(33.3333333333% - 40px);
+  padding: 30px;
+}
+.Plans .chooseCard .pricePlane {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.Plans .chooseCard .price {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.Plans .chooseCard .price .currency {
+  font-size: 20px;
+  top: -0.7em;
+}
+.Plans .chooseCard p {
+  padding: 10px 0;
+}
+.Plans .chooseCard .priceInfo div {
+  padding: 5px 0;
+}
+.Plans .chooseCard .getstart {
+  border: 1px solid #dadada;
+  width: 133px;
+  margin: 20px auto;
+  color: black;
+  padding: 9px 10px;
+  border-radius: 4px;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.Plans .chooseCard .getstart:hover {
+  background-color: #d4d4d4;
+}
+.Plans .ActiveCard {
+  border-color: #f78536;
+  position: relative;
+}
+.Plans .ActiveCard .Popular {
+  position: absolute;
+  width: 95px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  left: 50%;
+  border-radius: 4px;
+  transform: translateX(-50%);
+  top: -31px;
+  background-color: #f78536;
+}
+.Plans .ActiveCard .Popular::before {
+  position: absolute;
+  content: "";
+  border-width: 10px;
+  border-color: #f78536 transparent transparent transparent;
+  border-style: solid;
+  left: 50%;
+  bottom: -19px;
+  transform: translateX(-50%);
+}
+.Plans .ActiveCard .getstart {
+  background-color: #f78536;
+  border: none;
+  color: white;
+}
+.Plans .ActiveCard .getstart:hover {
+  background-color: #b6530e;
+}
+.Plans .head {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 42px;
+  font-family: "Montserrat";
+}
+.Plans .info {
+  width: 68%;
+  margin: auto auto;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5411764706);
+}
+@media (max-width: 992px) {
+  .Plans .chooseCard {
+    width: calc(33.3333333333% - 16px);
+    padding: 30px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .Plans .chooseCard {
+    margin-bottom: -20px;
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .Plans .PlanInfo {
+    margin-top: 45px;
+    padding: 25px 10px;
+  }
+  .Plans .head {
+    font-size: 35px;
+  }
+  .Plans .info {
+    width: 100%;
+  }
+}
+
+.UserProfile {
+  margin-top: 40px;
+  padding: 40px 20px;
+}
+.UserProfile .head,
+.UserProfile .info {
+  text-align: center;
+}
+.UserProfile .head {
+  font-family: "Montserrat";
+  font-size: 34px;
+}
+.UserProfile .info {
+  width: 50%;
+  font-size: 23px;
+  color: rgba(0, 0, 0, 0.568627451);
+  margin: auto auto;
+}
+.UserProfile .personalDetails {
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+.UserProfile .personalDetails .logout {
+  background-color: red;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: capitalize;
+}
+.UserProfile .personalDetails .line {
+  background-color: #f78536;
+  width: 110px;
+  height: 2px;
+  margin: 15px 0;
+}
+.UserProfile .personalDetails .detailsHeader {
+  color: black;
+  font-family: "Montserrat";
+  font-size: 30px;
+  margin-top: 30px;
+}
+.UserProfile .personalDetails .name {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-family: "Montserrat";
+}
+.UserProfile .personalDetails .desc {
+  padding: 10px 0;
+  font-size: 17px;
+}
+.UserProfile .personalDetails .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 172% !important;
+}
+.UserProfile .dlt {
+  border: 1px solid #a8a8a8;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+.UserProfile .dlt .detailsHeader {
+  margin-top: 0;
+  background-color: #eee;
+  padding: 0;
+}
+.UserProfile .dlt .dlt-Details {
+  margin-top: 10px;
+}
+.UserProfile .dlt .dlt-Details,
+.UserProfile .dlt .detailsHeader {
+  padding: 20px;
+}
+@media (max-width: 1400px) {
+  .UserProfile .personalDetails {
+    width: 100%;
+  }
+  .UserProfile .personalDetails .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 147% !important;
+  }
+}
+@media (max-width: 1200px) {
+  .UserProfile .personalDetails .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .UserProfile {
+    padding: 5px;
+  }
+  .UserProfile .info {
+    width: 100%;
+    font-size: 20px;
+  }
+  .UserProfile .detSection {
+    display: block !important;
+  }
+  .UserProfile .personalDetails {
+    width: 100%;
+  }
+  .UserProfile .personalDetails .name {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+  .UserProfile .personalDetails .mt-None-MobileView {
+    margin-top: 0;
+  }
+}
+
+.Book .content {
+  background: url("/bookplane.jpg");
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  background-position-y: 66%;
+}
+.Book .content .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.468);
+  width: 100%;
+  height: 100%;
+}
+.Book .content .header-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.Book .content .head {
+  font-size: 95px;
+  font-weight: 800;
+  font-family: "Montserrat";
+}
+.Book .content .desc {
+  font-size: 24px;
+  color: #e0e0e0;
+}
+.Book .book-container {
+  width: 50%;
+}
+.Book .enjoy {
+  background-color: rgba(238, 238, 238, 0.4196078431);
+  padding: 50px 20px;
+  position: relative;
+  padding-bottom: 0;
+}
+.Book .enjoy::before {
+  position: absolute;
+  content: "";
+  width: 27%;
+  height: 100%;
+  transform: translateX(-50%);
+  top: 0;
+  left: 50%;
+  z-index: 0;
+  background-color: #f78536;
+}
+.Book .EnjoyCard {
+  margin: 21px auto;
+  z-index: 3;
+}
+.Book .ImageCard {
+  width: 23%;
+}
+.Book .Cus-mr {
+  position: relative;
+  top: -130px;
+}
+.Book .Cus-img {
+  padding: 4px;
+  z-index: 2;
+}
+.Book .Cus-img img {
+  height: 311px;
+}
+.Book .textCard {
+  background-color: white;
+  z-index: 2;
+  padding: 50px 40px;
+  width: 46%;
+}
+.Book .textCard .cardHeader {
+  font-family: "Montserrat";
+  color: #f78536;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.Book .textCard .cardDesc {
+  font-size: 19px;
+  color: rgba(0, 0, 0, 0.57);
+  margin-top: 30px;
+}
+.Book .textCard .learn {
+  background-color: #f78536;
+  border: 2px solid #f78536;
+  text-align: center;
+  width: 186px;
+  padding: 10px;
+  font-size: 19px;
+  margin-top: 28px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Book .textCard .learn:hover {
+  background-color: transparent;
+  color: #f78536;
+}
+.Book .HomeForm {
+  padding: 30px 10px 75px 10px;
+}
+.Book .HomeForm .header {
+  font-size: 31px;
+}
+.Book .HomeForm .form-label {
+  font-weight: bold;
+}
+.Book .HomeForm .form-control {
+  height: 55px;
+  border-radius: 0px;
+  background-color: #f9f9f9;
+}
+.Book .HomeForm #submit {
+  background-color: #f78536;
+  color: white;
+}
+.Book .Info {
+  padding: 50px 20px;
+}
+.Book .Info .container {
+  max-width: 1000px;
+}
+.Book .Info .Info-Card {
+  text-align: center;
+  width: calc(25% - 30px);
+  margin: 20px auto;
+  cursor: pointer;
+}
+.Book .Info .Info-Card .img-fluid {
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.Book .Info .Info-Card .cardHead {
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+.Book .Info .Info-Card:hover .img-fluid {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #565656;
+}
+@media (max-width: 1400px) {
+  .Book .Cus-img img {
+    height: 394px;
+  }
+}
+@media (max-width: 1200px) {
+  .Book .book-container {
+    width: 100%;
+  }
+  .Book .Cus-mr {
+    top: -191px;
+  }
+  .Book .Cus-mr img {
+    height: 325px;
+  }
+}
+@media (max-width: 992px) {
+  .Book .enjoy {
+    padding-bottom: 30px;
+  }
+  .Book .EnjoyCard {
+    width: 100%;
+    margin: 5px auto;
+    padding: 4px;
+  }
+  .Book .EnjoyCard img {
+    height: auto !important;
+  }
+  .Book .Cus-mr {
+    top: 0;
+  }
+  .Book .d-none-MobileView {
+    display: none;
+  }
+  .Book .textCard {
+    padding: 50px 20px;
+  }
+  .Book .textCard .cardHeader {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .Book .HomeForm {
+    padding-bottom: 50px;
+  }
+  .Book .Info .Info-Card {
+    width: 50%;
+  }
+  .Book .content {
+    height: 324px;
+    background-position-x: 28%;
+  }
+  .Book .content .head {
+    font-size: 53px;
+  }
+  .Book .content .desc {
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 19px;
+  }
+}
+
+.Result {
+  padding: 50px 20px;
+}
+.Result .header {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.Result .travelDevider {
+  position: relative;
+  text-align: center;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+.Result .travelDevider::before, .Result .travelDevider::after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  background-color: #6c6c6c;
+  width: 38%;
+  height: 1px;
+}
+.Result .travelDevider::before {
+  left: 0;
+}
+.Result .travelDevider::after {
+  right: 0;
+}
+.Result .dateNow {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #008a00;
+}
+.Result .container {
+  max-width: 1320px;
+}
+.Result .bill-form {
+  position: relative;
+}
+.Result .bill-form::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 100%;
+  top: 0;
+  left: -36px;
+  background-color: rgba(238, 238, 238, 0.4980392157);
+}
+.Result .bill-info {
+  padding: 20px 0px;
+  width: 45%;
+  margin: 10px auto;
+}
+.Result .bill-info .price {
+  font-size: 38px;
+  font-weight: 800;
+  font-family: "Montserrat";
+}
+.Result .bill-info .price span {
+  font-size: 21px;
+  font-weight: 400;
+}
+.Result .bill-info .bildetails {
+  padding: 3px 0;
+}
+.Result .TravelDetails {
+  display: flex;
+  background-color: rgba(238, 238, 238, 0.4196078431);
+  margin-bottom: 15px;
+}
+.Result .TravelDetails .TravelTime {
+  width: 38%;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+.Result .TravelDetails .TravelTime .Departureairport,
+.Result .TravelDetails .TravelTime .Arrivalairport {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Montserrat";
+  letter-spacing: -1px;
+  width: 20%;
+}
+.Result .TravelDetails .TravelTime .Departureairport .time,
+.Result .TravelDetails .TravelTime .Arrivalairport .time {
+  font-size: 24px;
+  font-family: "cairo";
+  font-weight: 700;
+}
+.Result .TravelDetails .TravelClasses {
+  width: 55%;
+  display: flex;
+}
+.Result .TravelDetails .TravelClasses .class {
+  cursor: pointer;
+  width: 33.3333333333%;
+  border: 2px solid #eee;
+  position: relative;
+  padding: 15px 15px 0px 15px;
+  border-right-width: 0px;
+}
+.Result .TravelDetails .TravelClasses .class::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 5px;
+}
+.Result .TravelDetails .TravelClasses .class p {
+  text-align: center;
+  margin: 0px;
+}
+.Result .TravelDetails .TravelClasses .class .classType,
+.Result .TravelDetails .TravelClasses .class .price {
+  font-size: 19px;
+  font-weight: 600;
+}
+.Result .TravelDetails .TravelClasses .class .egp {
+  color: rgba(0, 0, 0, 0.567);
+  font-size: 14px;
+}
+.Result .TravelDetails .TravelClasses .class .arrow {
+  text-align: center;
+  margin-top: 15px;
+}
+.Result .TravelDetails .TravelClasses .class1 {
+  border-left-width: 1.5px;
+}
+.Result .TravelDetails .TravelClasses .class1::before {
+  background-color: rgb(0, 138, 0);
+}
+.Result .TravelDetails .TravelClasses .class1 .classType,
+.Result .TravelDetails .TravelClasses .class1 .price {
+  color: rgb(0, 138, 0);
+}
+.Result .TravelDetails .TravelClasses .class2::before {
+  background-color: rgb(0, 0, 174);
+}
+.Result .TravelDetails .TravelClasses .class2 .classType,
+.Result .TravelDetails .TravelClasses .class2 .price {
+  color: rgb(0, 0, 174);
+}
+.Result .TravelDetails .TravelClasses .class3 {
+  border-right-width: 2px;
+}
+.Result .TravelDetails .TravelClasses .class3::before {
+  background-color: #d00000;
+}
+.Result .TravelDetails .TravelClasses .class3 .classType,
+.Result .TravelDetails .TravelClasses .class3 .price {
+  color: #d00000;
+}
+.Result .TravelDetails .choseTravel {
+  width: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Result .TravelDetails .choseTravel .bookicon {
+  background-color: rgb(0, 138, 0);
+  color: white;
+  padding: 4px 13px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width: 1300px) {
+  .Result .travelDevider::before, .Result .travelDevider::after {
+    width: 33%;
+  }
+  .Result .TravelDetails .TravelClasses .class .classType,
+  .Result .TravelDetails .TravelClasses .class .price {
+    font-size: 17px;
+  }
+  .Result .TravelDetails .TravelTime {
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  .Result .travelDevider::before, .Result .travelDevider::after {
+    width: 29%;
+  }
+  .Result .TravelDetails {
+    display: block;
+    margin-bottom: 33px;
+    padding-bottom: 1px;
+  }
+  .Result .TravelDetails .TravelTime,
+  .Result .TravelDetails .TravelClasses,
+  .Result .TravelDetails .choseTravel {
+    width: 100%;
+  }
+  .Result .TravelDetails .TravelTime {
+    padding: 22px 0px;
+  }
+  .Result .bill-info {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .Result .travelDevider::before, .Result .travelDevider::after {
+    width: 25%;
+  }
+}
+@media (max-width: 575px) {
+  .Result {
+    padding: 27px 0px;
+  }
+  .Result .css-m5vj9m-MuiStepper-root {
+    display: none;
+  }
+  .Result .travelDevider::before, .Result .travelDevider::after {
+    width: 10%;
+  }
+  .Result .TravelDetails .TravelTime .Departureairport,
+  .Result .TravelDetails .TravelTime .Arrivalairport {
+    font-size: 18px;
+  }
+  .Result .TravelDetails .TravelTime .Departureairport .time,
+  .Result .TravelDetails .TravelTime .Arrivalairport .time {
+    font-size: 18px;
+  }
+  .Result .TravelDetails .TravelClasses .class {
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+  }
+  .Result .TravelDetails .TravelClasses .class .classType {
+    font-size: 14px;
+  }
+  .Result .TravelDetails .choseTravel .bookicon {
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    margin: 12px 0;
+  }
+  .Result .dateNow {
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.card-content {
+  background-color: transparent !important;
+  border: none;
+  padding: 0;
+}
+.card-content .input {
+  border-radius: 4px;
+  height: 55px;
+  background-color: white;
+}
+
+.route {
+  position: relative;
+  width: 60%;
+  text-align: center;
+}
+.route .plane {
+  display: block;
+  font-size: 66px;
+  transform: rotate(90deg);
+  margin-top: 3px;
+  margin-left: -9px;
+  color: #252525;
+}
+.route .routeTime,
+.route .stoped {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #4e4e4e;
+  font-weight: 700;
+  width: 100%;
+}
+.route .routeTime {
+  top: 0;
+}
+.route .stoped {
+  bottom: 0;
+  text-decoration: underline;
+}
+.route .planeLine {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #acacac;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.route .planeLine::after {
+  position: absolute;
+  content: "";
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  top: -4px;
+  background-color: #acacac;
+  border-radius: 50%;
+}
+@media (max-width: 1300px) {
+  .route .plane {
+    font-size: 56px;
+  }
+}
+@media (max-width: 575px) {
+  .route .plane {
+    font-size: 49px;
+    margin-left: 4px;
+  }
+  .route .planeLine {
+    width: 86%;
+    left: 10px;
+  }
+}
+
+.Ticket {
+  border: 1px solid #a8a8a8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.Ticket .header {
+  padding: 20px;
+  background-color: #eee;
+  font-size: 23px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #008a00;
+}
+.Ticket .content {
+  padding: 20px;
+}
+.Ticket .id {
+  margin-top: 18px;
+  font-size: 20px;
+}
+.Ticket .airports {
+  display: flex;
+  text-align: center;
+  margin: 20px 0;
+  align-items: center;
+}
+.Ticket .airports .dep,
+.Ticket .airports .arr {
+  width: 20%;
+  font-size: 23px;
+  font-weight: 800;
+}
+.Ticket .Name {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.Ticket .ticket-info {
+  color: #939393;
+}
+.Ticket .passernger-info {
+  font-size: 19px;
+  margin-top: 7px;
+}
+@media (max-width: 767px) {
+  .Ticket .content {
+    padding: 10px;
+  }
+  .Ticket .airports .dep,
+  .Ticket .airports .arr {
+    font-size: 21px;
+  }
+  .Ticket .Name {
+    font-size: 21px;
+  }
+}
+
+.Hotels .Hotel-Header {
+  position: relative;
+  width: 100%;
+  height: 830px;
+  background: url("/hotels.jpg");
+  background-size: cover;
+  background-position-y: 100%;
+}
+.Hotels .Hotel-Header .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.533);
+}
+.Hotels .Hotel-Header .info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.Hotels .Hotel-Header .info .head {
+  font-size: 180px;
+  font-family: "Amatic SC", sans-serif;
+}
+.Hotels .Hotel-Header .info .head span {
+  color: #f78536;
+}
+.Hotels .Hotel-Header .info .desc {
+  font-family: "Montserrat";
+  font-size: 35px;
+  margin-top: -46px;
+}
+.Hotels .Hotel-Number {
+  background-color: #f78536;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  width: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -85px;
+  text-align: center;
+  display: flex;
+}
+.Hotels .Hotel-Number .Number-Type,
+.Hotels .Hotel-Number .Number {
+  font-size: 20px;
+  font-weight: 700;
+}
+.Hotels .Hotel-Number .Number {
+  color: black;
+  font-size: 38px;
+}
+.Hotels .About {
+  margin-top: 200px;
+  margin-bottom: 40px;
+}
+.Hotels .About .Text-Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Hotels .About .Text-Card .Card-header {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 108px;
+  line-height: 1;
+  margin-top: -11px;
+}
+.Hotels .About .Text-Card .Card-header span {
+  color: #f78536;
+}
+.Hotels .About .Text-Card .Card-Desc {
+  color: rgb(163, 163, 163);
+  font-size: 17px;
+  margin-top: 22px;
+}
+.Hotels .About .Text-Card .More {
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  margin: 25px 0;
+  padding: 10px 0;
+  font-size: 21px;
+  background-color: #f78536;
+  color: white;
+  border-radius: 5px;
+}
+.Hotels .About .Info-Card {
+  width: 45%;
+  padding: 55px 30px;
+  margin: 18px auto;
+  color: white;
+}
+.Hotels .About .Info-Card .Card-icon {
+  display: block;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 15px;
+  color: black;
+}
+.Hotels .About .Info-Card .InfoHead {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.Hotels .About .Info-Card .desc {
+  color: #d3d3d3;
+  margin-top: 8px;
+}
+.Hotels .About .Right-Card {
+  margin-top: -40px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (max-width: 1200px) {
+  .Hotels .About .Text-Card .Card-header {
+    font-size: 99px;
+  }
+}
+@media (max-width: 992px) {
+  .Hotels .About .Text-Card .Card-header {
+    font-size: 76px;
+  }
+  .Hotels .About .Info-Card {
+    padding: 55px 10px;
+  }
+  .Hotels .About .Info-Card .InfoHead {
+    font-size: 18px;
+  }
+  .Hotels .Hotel-Number {
+    display: none;
+  }
+  .Hotels .Hotel-Header .info .head {
+    font-size: 160px;
+    line-height: 1;
+  }
+  .Hotels .Hotel-Header .info .desc {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .Hotels .About {
+    margin-top: 80px;
+  }
+  .Hotels .About .Info-Card {
+    width: 84%;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    padding: 55px 30px;
+  }
+  .Hotels .About .Info-Card .InfoHead {
+    font-size: 22px;
+  }
+}/*# sourceMappingURL=globals.css.map */

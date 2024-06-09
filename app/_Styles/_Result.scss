@@ -1,0 +1,267 @@
+.Result {
+  padding: 50px 20px;
+  .header {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .travelDevider {
+    position: relative;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 20px;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 17px;
+      background-color: #6c6c6c;
+      width: 38%;
+      height: 1px;
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+  }
+  .dateNow {
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: #008a00;
+  }
+  .container {
+    max-width: 1320px;
+  }
+  .bill-form {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 100%;
+      top: 0;
+      left: -36px;
+      background-color: #eeeeee7f;
+    }
+  }
+  .bill-info {
+    padding: 20px 0px;
+    width: 45%;
+    margin: 10px auto;
+    .price {
+      font-size: 38px;
+      font-weight: 800;
+      font-family: $header-font;
+      span {
+        font-size: 21px;
+        font-weight: 400;
+      }
+    }
+    .bildetails {
+      padding: 3px 0;
+    }
+  }
+  .TravelDetails {
+    display: flex;
+    background-color: #eeeeee6b;
+    margin-bottom: 15px;
+    .TravelTime {
+      width: 38%;
+      display: flex;
+      align-items: center;
+      padding: 0px 20px;
+      .Departureairport,
+      .Arrivalairport {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+        font-family: $header-font;
+        letter-spacing: -1px;
+        width: 20%;
+        .time {
+          font-size: 24px;
+          font-family: $main-font;
+          font-weight: 700;
+        }
+      }
+    }
+    .TravelClasses {
+      width: 55%;
+      display: flex;
+
+      .class {
+        cursor: pointer;
+        width: calc(100% / 3);
+        border: 2px solid #eee;
+        position: relative;
+        padding: 15px 15px 0px 15px;
+        border-right-width: 0px;
+        &::before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          content: "";
+          width: 100%;
+          height: 5px;
+        }
+        p {
+          text-align: center;
+          margin: 0px;
+        }
+        .classType,
+        .price {
+          font-size: 19px;
+          font-weight: 600;
+        }
+
+        .egp {
+          color: rgba(0, 0, 0, 0.567);
+          font-size: 14px;
+        }
+        .arrow {
+          text-align: center;
+          margin-top: 15px;
+        }
+      }
+      .class1 {
+        border-left-width: 1.5px;
+        &::before {
+          background-color: rgb(0, 138, 0);
+        }
+        .classType,
+        .price {
+          color: rgb(0, 138, 0);
+        }
+      }
+      .class2 {
+        &::before {
+          background-color: rgb(0, 0, 174);
+        }
+        .classType,
+        .price {
+          color: rgb(0, 0, 174);
+        }
+      }
+      .class3 {
+        border-right-width: 2px;
+        &::before {
+          background-color: #d00000;
+        }
+        .classType,
+        .price {
+          color: #d00000;
+        }
+      }
+    }
+    .choseTravel {
+      width: 7%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .bookicon {
+        background-color: rgb(0, 138, 0);
+        color: white;
+        padding: 4px 13px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .travelDevider {
+      &::before,
+      &::after {
+        width: 33%;
+      }
+    }
+    .TravelDetails .TravelClasses .class {
+      .classType,
+      .price {
+        font-size: 17px;
+      }
+    }
+    .TravelDetails {
+      .TravelTime {
+        padding: 0;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .travelDevider {
+      &::before,
+      &::after {
+        width: 29%;
+      }
+    }
+    .TravelDetails {
+      display: block;
+      margin-bottom: 33px;
+      padding-bottom: 1px;
+      .TravelTime,
+      .TravelClasses,
+      .choseTravel {
+        width: 100%;
+      }
+
+      .TravelTime {
+        padding: 22px 0px;
+      }
+    }
+    .bill-info {
+      width: 100%;
+      padding: 20px 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    .travelDevider {
+      &::before,
+      &::after {
+        width: 25%;
+      }
+    }
+  }
+  @media (max-width: 575px) {
+    padding: 27px 0px;
+    .css-m5vj9m-MuiStepper-root {
+      display: none;
+    }
+    .travelDevider {
+      &::before,
+      &::after {
+        width: 10%;
+      }
+    }
+    .TravelDetails .TravelTime {
+      .Departureairport,
+      .Arrivalairport {
+        font-size: 18px;
+        .time {
+          font-size: 18px;
+        }
+      }
+    }
+    .TravelDetails {
+      .TravelClasses {
+        .class {
+          padding: 15px 0px 0px 0px;
+          text-align: center;
+          .classType {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .TravelDetails .choseTravel .bookicon {
+      padding: 5px;
+      width: 100px;
+      text-align: center;
+      margin: 12px 0;
+    }
+    .dateNow {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}

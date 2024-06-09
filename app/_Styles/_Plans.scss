@@ -1,0 +1,147 @@
+.Plans {
+  text-align: center;
+  padding: 40px 0;
+  padding-bottom: 0;
+  .PlanInfo {
+    background-color: #f5f5f5;
+    padding: 75px 0;
+  }
+  .Plan-Card {
+    display: flex;
+    margin-top: 45px;
+    text-align: left;
+    .icon {
+      font-size: 46px;
+      margin-right: 24px;
+      color: #a0a0a0;
+    }
+    .header {
+      font-weight: 600;
+      font-size: 21px;
+      font-family: "Montserrat";
+      margin-bottom: 5px;
+    }
+    .desc {
+      color: #a0a0a0;
+    }
+    .more {
+      color: $orange-color;
+      margin-top: 10px;
+    }
+  }
+  .chooseCard {
+    border: 2px solid #eceef0;
+    border-radius: 5px;
+    margin: 70px auto;
+    width: calc(100% / 3 - 40px);
+    padding: 30px;
+    .pricePlane {
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    .price {
+      margin-top: 30px;
+      font-size: 30px;
+      font-weight: 600;
+      .currency {
+        font-size: 20px;
+        top: -0.7em;
+      }
+    }
+    p {
+      padding: 10px 0;
+    }
+    .priceInfo {
+      div {
+        padding: 5px 0;
+      }
+    }
+    .getstart {
+      border: 1px solid #dadada;
+      width: 133px;
+      margin: 20px auto;
+      color: black;
+      padding: 9px 10px;
+      border-radius: 4px;
+      display: block;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: #d4d4d4;
+      }
+    }
+  }
+  .ActiveCard {
+    border-color: $orange-color;
+    position: relative;
+    .Popular {
+      position: absolute;
+      width: 95px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      color: white;
+      align-items: center;
+      left: 50%;
+      border-radius: 4px;
+      transform: translateX(-50%);
+      top: -31px;
+      background-color: $orange-color;
+      &::before {
+        position: absolute;
+        content: "";
+        border-width: 10px;
+        border-color: $orange-color transparent transparent transparent;
+        border-style: solid;
+        left: 50%;
+        bottom: -19px;
+        transform: translateX(-50%);
+      }
+    }
+    .getstart {
+      background-color: $orange-color;
+      border: none;
+      color: white;
+      &:hover {
+        background-color: #b6530e;
+      }
+    }
+  }
+  .head {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 42px;
+    // color: #5db5d3;
+    font-family: $header-font;
+  }
+  .info {
+    width: 68%;
+    margin: auto auto;
+    font-size: 22px;
+    color: #0000008a;
+  }
+  @media (max-width: 992px) {
+    .chooseCard {
+      width: calc(33.3333333333% - 16px);
+      padding: 30px 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    .chooseCard {
+      margin-bottom: -20px;
+      width: 100%;
+      padding: 30px 10px;
+    }
+    .PlanInfo {
+      margin-top: 45px;
+      padding: 25px 10px;
+    }
+    .head {
+      font-size: 35px;
+    }
+    .info {
+      width: 100%;
+    }
+  }
+}

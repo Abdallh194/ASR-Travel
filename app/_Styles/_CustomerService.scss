@@ -1,0 +1,76 @@
+.Customer-Service {
+  text-align: center;
+  margin: 50px 0;
+  .header {
+    color: $orange-color;
+    font-family: $header-font;
+    font-size: 40px;
+    font-weight: 400px;
+  }
+  .desc {
+    width: 68%;
+    font-size: 23px;
+    color: #0000007d;
+    margin: 13px auto;
+  }
+  .line {
+    width: 100px;
+    height: 2px;
+    background-color: $orange-color;
+    margin: 10px auto;
+  }
+  .Contact-Card {
+    text-align: left;
+    margin-top: 60px;
+    .card-header {
+      font-size: 28px;
+      font-family: $header-font;
+      padding: 15px 0;
+    }
+    .card-desc {
+      font-size: 19px;
+      color: #00000099;
+      padding: 10px 0;
+    }
+    .card-details {
+      margin-top: 10px;
+    }
+    .details {
+      color: rgba(0, 0, 0, 0.6);
+      padding: 5px 0;
+      font-family: $header-font;
+      font-size: 17px;
+    }
+    .text-feild {
+      display: flex;
+      .form-control {
+        height: 50px;
+        width: 48%;
+        margin: 10px auto;
+      }
+    }
+    #msg {
+      resize: none;
+      height: 150px;
+      width: 98%;
+      margin: 10px auto;
+    }
+    #submit {
+      width: 98%;
+      margin: 10px auto;
+      height: 45px;
+      border: none;
+      background-color: $orange-color;
+      color: white;
+    }
+  }
+  @media (max-width: 767px) {
+    .header {
+      font-size: 34px;
+    }
+    .desc {
+      width: 90%;
+      font-size: 19px;
+    }
+  }
+}

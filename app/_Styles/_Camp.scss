@@ -1,0 +1,130 @@
+.Camp {
+  padding: 40px;
+  margin-top: 50px;
+
+  .Camp-Card {
+    .header {
+      font-size: 88px;
+      line-height: 1.1;
+      font-weight: 500;
+      font-family: "Montserrat";
+      margin-left: 39px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -38px;
+        width: 30px;
+        height: 100%;
+        background-color: $orange-color;
+      }
+    }
+    .desc {
+      padding: 10px 0;
+    }
+    .socials-icon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    .icon {
+      color: white;
+      background-color: black;
+      padding: 4px;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .details {
+      display: flex;
+      justify-content: space-between;
+      .btn-readMore {
+        background-color: #f78536;
+        color: white;
+        width: 170px;
+        padding: 8px;
+        text-align: center;
+        font-size: 23px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 2px solid $orange-color;
+        &:hover {
+          background-color: transparent;
+          color: $orange-color;
+        }
+      }
+    }
+    .image {
+      overflow: hidden;
+      width: 60%;
+      height: 111px;
+
+      .img-fluid {
+        display: block;
+        margin-top: -66px;
+      }
+    }
+  }
+  .Camp-Card-image {
+    .img-fluid {
+      height: 587px;
+    }
+  }
+  @media (max-width: 1400px) {
+    .Camp-Card {
+      .header {
+        font-size: 80px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .Camp-Card {
+      .header {
+        font-size: 63px;
+      }
+    }
+    .Camp-Card-image {
+      .img-fluid {
+        height: 500px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .Camp-Card {
+      .header {
+        font-size: 42px;
+      }
+    }
+    .Camp-Card-image {
+      .img-fluid {
+        height: 460px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+    .Camp-Card {
+      margin-top: 34px;
+      .header {
+        font-size: 53px;
+        font-weight: 400;
+      }
+      .details {
+        margin: 25px 0;
+      }
+      .image {
+        .img-fluid {
+          margin-top: -39px;
+        }
+      }
+    }
+    .Camp-Card-image {
+      .img-fluid {
+        height: auto;
+      }
+    }
+  }
+}

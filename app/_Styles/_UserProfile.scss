@@ -1,0 +1,111 @@
+.UserProfile {
+  margin-top: 40px;
+  padding: 40px 20px;
+  .head,
+  .info {
+    text-align: center;
+  }
+  .head {
+    font-family: $header-font;
+    font-size: 34px;
+  }
+  .info {
+    width: 50%;
+    font-size: 23px;
+    color: #00000091;
+    margin: auto auto;
+  }
+
+  .personalDetails {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    .logout {
+      background-color: red;
+      color: white;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-transform: capitalize;
+    }
+    .line {
+      background-color: #f78536;
+      width: 110px;
+      height: 2px;
+      margin: 15px 0;
+    }
+    .detailsHeader {
+      color: black;
+      font-family: $header-font;
+      font-size: 30px;
+      margin-top: 30px;
+    }
+    .name {
+      font-size: 19px;
+      font-weight: 500;
+      letter-spacing: -1px;
+      font-family: $header-font;
+    }
+    .desc {
+      padding: 10px 0;
+      font-size: 17px;
+    }
+    .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+      width: 172% !important;
+    }
+  }
+  .dlt {
+    border: 1px solid #a8a8a8;
+    border-radius: 8px;
+    margin-top: 40px;
+    .detailsHeader {
+      margin-top: 0;
+      background-color: #eee;
+      padding: 0;
+    }
+    .dlt-Details {
+      margin-top: 10px;
+    }
+    .dlt-Details,
+    .detailsHeader {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .personalDetails {
+      width: 100%;
+      .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+        width: 147% !important;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .personalDetails {
+      .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+        width: 100% !important;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 5px;
+    .info {
+      width: 100%;
+      font-size: 20px;
+    }
+    .detSection {
+      display: block !important;
+    }
+    .personalDetails {
+      width: 100%;
+      .name {
+        font-size: 20px;
+        margin-top: 16px;
+      }
+      .mt-None-MobileView {
+        margin-top: 0;
+      }
+    }
+  }
+}
