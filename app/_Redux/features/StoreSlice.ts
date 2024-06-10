@@ -11,7 +11,7 @@ const currentUser = createSlice({
       NewEmail: "Abdallhsabry194@gmail.com",
       NewBirthday: "01-07-2000",
       NewCountry: "Egypt",
-      NewPassword: "1020300",
+      NewPassword: "0",
     },
     PassportDetails: {
       Nationality: "",
@@ -60,10 +60,8 @@ const currentUser = createSlice({
     },
     AddNewUser: (state, action) => {
       state.newuser = action.payload;
-      console.log(state.newuser.NewBirthday);
-
-      state.userNameFromStore = action.payload.NewEmail;
-      state.PassWordFromStore = action.payload.NewPassword;
+      // state.userNameFromStore = action.payload.NewEmail;
+      // state.PassWordFromStore = action.payload.NewPassword;
     },
     ActiveBook: (state, action) => {
       state.flightbookedsuccessfully.isSuccess = true;

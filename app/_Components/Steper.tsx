@@ -4,8 +4,7 @@ import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
 import StepButton from "@mui/material/StepButton";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+
 const steps = ["Trips", "Travelers", "Services", "paying off", "confirmation"];
 
 export default function HorizontalNonLinearStepper() {
@@ -61,7 +60,7 @@ export default function HorizontalNonLinearStepper() {
   };
 
   return (
-    <Box sx={{ width: "100%" }} className="mb-5">
+    <Box sx={{ width: "100%" }} className="mb-5 d-none-MobileView">
       <Stepper nonLinear activeStep={activeStep}>
         {steps.map((label, index) => (
           <Step key={label} completed={completed[index]}>

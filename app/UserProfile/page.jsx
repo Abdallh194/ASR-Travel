@@ -75,9 +75,8 @@ const page = () => {
                 </div>
                 <div className="date">
                   <div className="name">Date of birth</div>
-                  {/* {newuser.NewBirthday.$D}-{newuser.NewBirthday.$M}-
-                  {newuser.NewBirthday.$y} */}
-                  01-07-2000
+                  {newuser.NewBirthday.$D}-{newuser.NewBirthday.$M + 1}-
+                  {newuser.NewBirthday.$y}
                 </div>
               </div>
               <hr />
@@ -196,6 +195,7 @@ const page = () => {
                       <TextField
                         fullWidth
                         id="Passportnumber"
+                        type="number"
                         label="Passport Number"
                         name="Passportnumber"
                         autoComplete="Passport Number"
@@ -286,7 +286,12 @@ const page = () => {
                 ) : (
                   <p style={{ color: "red" }}>
                     There are no flights booked now{" "}
-                    <Link href="/Book">Book Now</Link>
+                    <Link
+                      style={{ color: "black", fontWeight: "bold" }}
+                      href="/Book"
+                    >
+                      Book Now
+                    </Link>
                   </p>
                 )}
               </div>

@@ -37,6 +37,7 @@ export default function CriditCardPayment({ TotalPrice }) {
           <FormLabel>Card number</FormLabel>
           <Input
             className="input"
+            type="number"
             endDecorator={<CreditCardIcon />}
             onChange={(e) => {
               setcardNumber(e.target.value);
@@ -47,6 +48,7 @@ export default function CriditCardPayment({ TotalPrice }) {
           <FormLabel>Expiry date</FormLabel>
           <Input
             className="input"
+            type="number"
             endDecorator={<CreditCardIcon />}
             onChange={(e) => {
               setExpirydate(e.target.value);
@@ -57,6 +59,7 @@ export default function CriditCardPayment({ TotalPrice }) {
           <FormLabel>CVC/CVV</FormLabel>
           <Input
             className="input"
+            type="number"
             endDecorator={<InfoOutlined />}
             onChange={(e) => {
               setcvv(e.target.value);

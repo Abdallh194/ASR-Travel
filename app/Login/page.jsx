@@ -26,15 +26,19 @@ const Login = () => {
   // dispatch
   let dispatch = useDispatch();
 
-  let { userNameFromStore, PassWordFromStore } = useSelector((s) => s.ASR);
+  let { userNameFromStore, PassWordFromStore, newuser } = useSelector(
+    (s) => s.ASR
+  );
   const router = useRouter();
   // handle Form
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (
-      userNameFromStore === EnteredUserName &&
-      PassWordFromStore === EnteredPassWord
+      (userNameFromStore === EnteredUserName &&
+        PassWordFromStore === EnteredPassWord) ||
+      (newuser.NewEmail === EnteredUserName &&
+        newuser.NewPassword === EnteredPassWord)
     ) {
       dispatch(ActiveLoggin());
       setlogginProccessSuccess(false);

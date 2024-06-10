@@ -225,7 +225,10 @@
   @media (max-width: 575px) {
     padding: 27px 0px;
     .css-m5vj9m-MuiStepper-root {
-      display: none;
+      display: none !important;
+    }
+    .d-none-MobileView {
+      display: none !important;
     }
     .travelDevider {
       &::before,
