@@ -18,7 +18,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { useDispatch } from "react-redux";
 import { AddNewUser } from "../_Redux/features/StoreSlice";
 import { useRouter } from "next/navigation";
-
+import { motion } from "framer-motion";
 const SignUp = () => {
   // catch input data
 
@@ -60,9 +60,12 @@ const SignUp = () => {
     }
   };
   return (
-    <Box
-      sx={{
-        marginTop: 8,
+    <motion.div
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.2 }}
+      style={{
+        marginTop: "70px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -200,7 +203,7 @@ const SignUp = () => {
           ""
         )}
       </Box>
-    </Box>
+    </motion.div>
   );
 };
 

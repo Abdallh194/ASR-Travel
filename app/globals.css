@@ -95,7 +95,8 @@ hr {
 .HomePage .Text-Section .download {
   background-color: white;
   padding: 10px;
-  width: 180px;
+  display: block;
+  width: 200px;
   color: black;
   border-radius: 40px;
   font-size: 19px;
@@ -473,6 +474,7 @@ footer .Policy {
 }
 .Camp .Camp-Card .details .btn-readMore {
   background-color: #f78536;
+  display: block;
   color: white;
   width: 170px;
   padding: 8px;

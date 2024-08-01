@@ -1,12 +1,15 @@
-import Image from "next/image";
+"use client";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-
+import { motion } from "framer-motion";
 const DestinationCard = ({ md, title, src }) => {
   return (
     <Col md={md} sm={6} xs={12} className="Destinatio-Card">
       <div className="over-lay">
-        <Image
+        <motion.img
+          initial={{ x: -30, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.2 }}
           src={src}
           alt="camp city"
           width={500}

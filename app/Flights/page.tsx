@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
@@ -5,9 +6,16 @@ import StarRateIcon from "@mui/icons-material/StarRate";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import Plans from "../_Components/Plans";
 import Link from "next/link";
+
+import { motion } from "framer-motion";
 const page = () => {
   return (
-    <div className="Flights">
+    <motion.div
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.2 }}
+      className="Flights"
+    >
       <Container fluid>
         <Row>
           <Col md={6} xs={12} className="flights-card Text-card">
@@ -73,7 +81,7 @@ const page = () => {
         </Row>
         <Plans />
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

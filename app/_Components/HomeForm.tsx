@@ -7,7 +7,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
 import { useDispatch } from "react-redux";
 import { PrimarySearch } from "../_Redux/features/StoreSlice";
-
+import { motion } from "framer-motion";
 function HomeForm() {
   var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -63,7 +63,12 @@ function HomeForm() {
   };
 
   return (
-    <Form className="HomeForm">
+    <motion.form
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.2 }}
+      className="HomeForm"
+    >
       <div className="header">Search for flights</div>
       <Row className="mb-3">
         <Form.Group as={Col} md="6" controlId="validationCustom01">
@@ -190,7 +195,7 @@ function HomeForm() {
       >
         Search for flights
       </Button>
-    </Form>
+    </motion.form>
   );
 }
 

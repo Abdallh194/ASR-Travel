@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
+import { motion } from "framer-motion";
 const ClintCard = ({ msg, clientName }) => {
   return (
     <Col md={4} xs={12} className="HappyClients-card">
@@ -20,7 +22,12 @@ const ClintCard = ({ msg, clientName }) => {
 
 const HappyClients = () => {
   return (
-    <div className="HappyClients">
+    <motion.div
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.2 }}
+      className="HappyClients"
+    >
       <Container>
         <div className="header">Clients Reviews</div>
         <Row>
@@ -36,7 +43,7 @@ const HappyClients = () => {
               eligendi obcaecati veniam. Veritatis, magni! <FormatQuoteIcon />
             </div>
             <div className="clientName">
-              <span>Ahmed Moataz</span> : ASRTravel.com
+              <span>Ahmed Mohamed</span> : ASRTravel.com
             </div>
             <div className="Creative">Creative Director</div>
             <div className="qoues">
@@ -45,11 +52,11 @@ const HappyClients = () => {
           </Col>
           <ClintCard
             msg="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nam odio sunt, laudantium recusandae, reprehenderit, soluta excepturi quod nisi aut quam aliquid voluptatem mollitia voluptates commodi rem quis ut dolore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum nam odio sunt, laudantium recusandae, reprehenderit, soluta"
-            clientName="Shebiny"
+            clientName="Shehap Sabry"
           />
         </Row>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

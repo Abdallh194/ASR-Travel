@@ -1,12 +1,19 @@
+"use client";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
 import HiveIcon from "@mui/icons-material/Hive";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import DryCleaningIcon from "@mui/icons-material/DryCleaning";
+import { motion } from "framer-motion";
 const page = () => {
   return (
-    <div className="Hotels">
+    <motion.div
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.2 }}
+      className="Hotels"
+    >
       <div className="Hotel-Header">
         <div className="overlay">
           <div className="info">
@@ -123,7 +130,7 @@ const page = () => {
           </Row>
         </Container>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

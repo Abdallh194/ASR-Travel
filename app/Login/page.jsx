@@ -16,7 +16,7 @@ import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
 import { ActiveLoggin } from "../_Redux/features/StoreSlice";
-
+import { motion } from "framer-motion";
 const Login = () => {
   // states
   let [EnteredUserName, setEntredUser] = useState("");
@@ -48,7 +48,12 @@ const Login = () => {
     }
   };
   return (
-    <div className="Login">
+    <motion.div
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.2 }}
+      className="Login"
+    >
       <Box
         className="logform"
         sx={{
@@ -130,7 +135,7 @@ const Login = () => {
           </Grid>
         </Box>
       </Box>
-    </div>
+    </motion.div>
   );
 };
 

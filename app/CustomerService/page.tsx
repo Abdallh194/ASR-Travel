@@ -6,6 +6,7 @@ import WhereToVoteIcon from "@mui/icons-material/WhereToVote";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
+import { motion } from "framer-motion";
 const page = () => {
   const [showModal, setshowModal] = useState(false);
   const handleShow = () => setshowModal(true);
@@ -15,7 +16,12 @@ const page = () => {
   console.log(showModal);
 
   return (
-    <div className="Customer-Service">
+    <motion.div
+      initial={{ y: 30, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.2 }}
+      className="Customer-Service"
+    >
       <Container>
         <div className="header">Contact Information</div>
         <div className="desc">
@@ -96,7 +102,7 @@ const page = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 
